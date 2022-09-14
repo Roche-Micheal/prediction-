@@ -9,7 +9,7 @@ def main():
     st.markdown("##### Are you planning to sell your car !?\n##### So let's try evaluating the price.. 🤖 ")
     st.image(
             "https://imgd.aeplcdn.com/0x0/n/cw/ec/27032/s60-exterior-right-front-three-quarter-3.jpeg",
-            width=400, # Manually Adjust the width of the image as per requirement
+            width=300, # Manually Adjust the width of the image as per requirement
         )
     st.write('')
     st.write('')
@@ -56,6 +56,8 @@ def main():
                 st.success("You can sell the car for {} lakhs 🙌".format(output))
         except:
             st.warning("Opps!! Something went wrong\nTry again")
-
+    hs = """ <style>#MainMenu {visibility:hidden;}footer {visibility:hidden;}</style>"""
+    st.markdown(hs,unsafe_allow_html = True)             
+ 
 if __name__ == '__main__':
     main()
